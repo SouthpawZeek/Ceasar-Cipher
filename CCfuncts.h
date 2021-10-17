@@ -5,8 +5,14 @@
 #define CCFUNCTS_H
 #define MAX_MESSAGE_LEN 2000
 
+//Get's user input.
 char* getUserInput(char someStr[MAX_MESSAGE_LEN]);
 
-// need a function to put the message into an allocated array the size of the number of characters/numbers inputted. 
+//gets the length of the message entered.
+int arrayLength(char someStr[MAX_MESSAGE_LEN]);
+
+// This function puts each character into each slot of the array and returns the character
+// by character array
+char* putStringInArray(char someStr[MAX_MESSAGE_LEN], char characterArray[MAX_MESSAGE_LEN], int length); 
 
 #endif
