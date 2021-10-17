@@ -5,7 +5,6 @@
 
 int main(void) {
     char myStr[MAX_MESSAGE_LEN];
-    getUserInput(&myStr[MAX_MESSAGE_LEN]);
-    fprintf(stdout, "%s", myStr);
+    fprintf(stdout, " your string is %s\n\n\n", getUserInput(&myStr[MAX_MESSAGE_LEN]));
     return 0;
 }
