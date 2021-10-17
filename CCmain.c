@@ -6,8 +6,7 @@
 
 int main(void) {
     char someStr[MAX_MESSAGE_LEN];
-    char* myStr[MAX_MESSAGE_LEN];
-    myStr[MAX_MESSAGE_LEN] = getUserInput(someStr);
-    fprintf(stdout, "%s", myStr);
+    getUserInput(someStr);
+    fprintf(stdout, "The message you want encypted is : %s", someStr);
     return 0;
 }
