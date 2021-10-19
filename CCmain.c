@@ -14,7 +14,7 @@ int main(void) {
     //get the length of the string including null character. 
     int stringLength = arrayLength(someStr);
     fprintf(stdout, " Here is the string length: %i\n\n\n", stringLength);
-
+    //allocate an array the size of the length of the string the user entered. 
     putStringInArray(someStr, characterArray, stringLength);
     return 0;
 }
